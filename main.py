@@ -1,0 +1,14 @@
+import ray
+
+ray.init(
+    runtime_env={
+        "pip": [
+            "datasets",
+            "evaluate",
+            "accelerate>=0.16.0",
+            "transformers>=4.26.0",
+            "torch>=1.12.0",
+            "deepspeed",
+        ]
+    }
+)
